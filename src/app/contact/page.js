@@ -12,15 +12,15 @@ export default function Contact() {
 
         <div className="flex flex-col gap-6">
           
-          <a href="mailto:your@email.com" 
+          <a href="mailto:arnabhazra2005@email.com" 
             className="border border-gray-800 p-6 hover:border-white transition-all duration-500 group">
             <p className="text-gray-600 text-sm tracking-widest mb-2">EMAIL</p>
             <p className="text-white text-lg group-hover:text-gray-300 transition-all duration-300">
-              your@email.com
+              arnabhazra2005@email.com
             </p>
           </a>
 
-          <a href="https://linkedin.com" target="_blank"
+          <a href="https://linkedin.com/in/arnabhazra1408" target="_blank"
             className="border border-gray-800 p-6 hover:border-white transition-all duration-500 group">
             <p className="text-gray-600 text-sm tracking-widest mb-2">LINKEDIN</p>
             <p className="text-white text-lg group-hover:text-gray-300 transition-all duration-300">
@@ -28,7 +28,7 @@ export default function Contact() {
             </p>
           </a>
 
-          <a href="https://github.com" target="_blank"
+          <a href="https://github.com/ArnabHazra1408" target="_blank"
             className="border border-gray-800 p-6 hover:border-white transition-all duration-500 group">
             <p className="text-gray-600 text-sm tracking-widest mb-2">GITHUB</p>
             <p className="text-white text-lg group-hover:text-gray-300 transition-all duration-300">
