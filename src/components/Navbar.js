@@ -58,29 +58,18 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* ── MOBILE MENU OVERLAY ── */}
-      <div className={`md:hidden fixed inset-0 bg-black transition-all duration-500 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
-        <div className="flex flex-col justify-center items-start h-full px-6 gap-8">
-
-          {/* Close button */}
-          <button
-            onClick={() => setOpen(false)}
-            className="absolute top-5 right-6 flex flex-col gap-[5px]"
-            aria-label="Close menu"
-          >
-            <span className="block w-6 h-px bg-white/50 rotate-45 translate-y-[3px]" />
-            <span className="block w-6 h-px bg-white/50 -rotate-45 -translate-y-[3px]" />
-          </button>
-
+      {/* ── MOBILE DROPDOWN PANEL ── */}
+      <div className={`md:hidden absolute top-14 right-6 transition-all duration-300 ${open ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none -translate-y-2"}`}>
+        <div className="flex flex-col items-end gap-4 bg-black/90 border border-white/10 rounded-2xl px-6 py-5 backdrop-blur-md">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               onClick={() => setOpen(false)}
-              className={`text-4xl font-bold tracking-tight transition-all duration-300 ${
+              className={`text-sm tracking-[0.2em] uppercase transition-all duration-300 ${
                 pathname === href
                   ? "text-white"
-                  : "text-white/20 hover:text-white/60"
+                  : "text-white/30 hover:text-white/70"
               }`}
             >
               {label}
