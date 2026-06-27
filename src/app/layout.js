@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import GlowCursor from "@/components/GlowCursor";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -23,7 +24,8 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-black pt-24">
+      <body className="min-h-full flex flex-col bg-black">
+        <GlowCursor />
         <Navbar />
         {children}
       </body>

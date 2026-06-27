@@ -37,3 +37,62 @@ body {
   animation: fadeIn 1.5s ease 0.8s forwards;
   opacity: 0;
 }
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: rgba(255,255,255,0.5); }
+}
+
+.typewriter {
+ .typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255,255,255,0.5);
+  max-width: fit-content;
+  width: 0;
+  animation: typewriter 2s steps(26) 0.5s forwards, blink 0.8s step-end 0.5s 8;
+}
+}
+
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.draw-line {
+  height: 1px;
+  width: 0;
+  background: rgba(255,255,255,0.12);
+  animation: drawLine 1.2s ease 1.2s forwards;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-line-1 { animation: fadeUp 0.8s ease 0.0s both; }
+.animate-line-2 { animation: fadeUp 0.8s ease 0.18s both; }
+.animate-line-3 { animation: fadeUp 0.8s ease 0.36s both; }
+.animate-line-4 { animation: fadeUp 0.8s ease 0.54s both; }
+.animate-line-5 { animation: fadeUp 0.8s ease 0.72s both; }
+.animate-line-6 { animation: fadeUp 0.8s ease 0.90s both; }
+.animate-line-7 { animation: fadeUp 0.8s ease 1.08s both; }
+
+/* ============================================
+   SCROLL REVEAL — add to any element
+   Usage: className="reveal"
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
